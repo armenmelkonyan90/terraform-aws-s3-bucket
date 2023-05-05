@@ -365,7 +365,7 @@ variable "transfer_acceleration_enabled" {
 
 variable "s3_object_ownership" {
   type        = string
-  default     = "ObjectWriter"
+  default     = "BucketOwnerPreferred"
   description = "Specifies the S3 object ownership control. Valid values are `ObjectWriter`, `BucketOwnerPreferred`, and 'BucketOwnerEnforced'."
 }
 
